@@ -58,7 +58,8 @@ const linkedMethods = [
   'panBy',
   'panTo',
   'panToBounds',
-  'fitBounds'
+  'fitBounds',
+  'setHeading'
 ].reduce((all, methodName) => {
   all[methodName] = function (...args) {
     if (this.$mapObject) { this.$mapObject[methodName].apply(this.$mapObject, args) }
